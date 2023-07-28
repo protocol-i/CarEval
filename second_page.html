@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarEval</title>
-  <!-- External Bootstrap CSS link -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- External custom CSS link -->
-  <link rel="stylesheet" href="css/styles.css">
-<!-- jQuery script -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarEval</title>
+    <!-- External Bootstrap CSS link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- External custom CSS link -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <div class="container mt-5">
-    <h2>Customer Information Summary</h2>
-    <div id="summary" class="bg-white border p-3 rounded">
-      <!-- The summary will be dynamically generated here -->
-      
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <div class="navbar-container">
+          <a class="navbar-brand" href="index.html">CarEval</a>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-links" id="navbarLinks">
+            <ul>
+              <li><a href="#">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container mt-5">
+        <h2>Customer Information Summary</h2>
+        <div id="summary" class="bg-white border p-3 rounded">
+            <!-- The summary will be dynamically generated here -->
+
+        </div>
+        <button type="button" class="btn btn-primary mt-3" id="submitButton">Submit</button>
     </div>
-    <button type="button" class="btn btn-primary mt-3" id="submitButton">Submit</button>
-  </div>
-  <!-- jQuery script -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- JavaScript for generating the summary and submitting the data -->
-  <script src="js/script.js"></script>
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JavaScript for generating the summary and submitting the data -->
+    <!-- <script src="js/script.js"></script> -->
+
+    <script src="js/secondpage.js">
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarEval</title>
+  <!-- Bootstrap CSS link -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Customer Information</h2>
+    <form id="customerForm">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" class="form-control" id="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="refCode">Reference Code</label>
+        <input type="text" class="form-control" id="refCode" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="carMaker">Select Automobile Maker</label>
+        <select class="form-control" id="carMaker" required>
+          <option value="">Select Maker</option>
+          <!-- Populate options from the array of automobile makers -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="carModel">Select Model</label>
+        <select class="form-control" id="carModel" required disabled>
+          <option value="">Select Maker first</option>
+          <!-- Options will be populated based on the selected maker -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Car Conditions</label><br>
+        <!-- Checkboxes for car conditions -->
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="engineIssue" value="Engine issue">
+          <label class="form-check-label" for="engineIssue">Engine issue</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="gearboxIssue" value="Gearbox issue">
+          <label class="form-check-label" for="gearboxIssue">Gearbox issue</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="needsbodyRepair" value="Needs Body Repair">
+            <label class="form-check-label" for="needsbodyRepair">Needs body repair</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="needsRepainting" value="Needs Repainting">
+            <label class="form-check-label" for="needsRepainting">Needs repainting</label>
+          </div>  
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="wiringProblems" value="Wiring Problems">
+            <label class="form-check-label" for="wiringProblems">wiring problems</label>
+          </div> 
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="oilLeakage" value="Oil Leakage">
+            <label class="form-check-label" for="oilLeakage">Oil leakage</label>
+          </div> 
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="brakeIssue" value="Break issue">
+            <label class="form-check-label" for="brakeIssue">Break Issue</label>
+          </div> 
+        
+      </div>
+      <button type="button" class="btn btn-primary" id="nextButton">Next</button>
+    </form>
+  </div>
+  <!-- jQuery and Bootstrap JS scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script to handle form validation and navigation to the next page -->
+  <script src="js/script.js"></script>
+</body>
+</html>

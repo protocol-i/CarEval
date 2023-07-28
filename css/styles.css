@@ -75,4 +75,72 @@ body {
     display: block;
     margin: 20px auto 0;
   }
-  
+
+/* styles for the navigation bar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: none;
+}
+
+.navbar-links ul {
+  display: flex;
+}
+
+.navbar-links ul li {
+  margin-left: 20px;
+}
+
+.navbar-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media query for responsive behavior */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: block;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-links ul li {
+    margin: 10px 0;
+  }
+
+  .navbar-toggler {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Styling for the burger icon */
+  .navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #fff;
+  }
+}

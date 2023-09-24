@@ -43,13 +43,4 @@ You should create an array of objects containing 10 automobile makers of your ch
 2. Add a submit button when clicked will convert the final data into a JSON object with keys: name, email, refcode, make, model, conditions.
 then log the JSON data to the console of the browser or if you prefer to log it to a file or any other logging system.
 
-Note
-Kindly consider
-- User Interface should be presentable.
-- Submission before the deadline shows efficiency.
-- Proper coding ethics.
-- Proper Comment.
-- Explain why you pick a preferred language.  Also if any framework / library was used kindly give the name and why you used it.
 
-Good Luck.
-Regards.
